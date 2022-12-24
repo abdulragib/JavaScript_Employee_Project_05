@@ -1,3 +1,5 @@
+
+// Array of objects
 const array = [
   { id: 1, name: "John", age: "18", profession: "Developer" },
   { id: 2, name: "Jack", age: "20", profession: "Developer" },
@@ -60,12 +62,13 @@ addUser.addEventListener("click", () => {
   var age = document.getElementById("enter-age")
   var profession = document.getElementById("enter-profession")
 
-
+    //checking if input fields are empty
   if (name.value === "" || age.value === "" || profession.value === "") {
     alert("Please fill out all the input fields before adding a user")
     return
   }
 
+    //creating new user
   const newUser = {
     id: array.length + 1,
     name: name.value,
@@ -73,13 +76,16 @@ addUser.addEventListener("click", () => {
     profession: profession.value,
   }
 
+  //display new-user in console
   console.log(newUser)
 
   //adding new user to old user list
   array.push(newUser)
 
+  //display whole user to console
   console.log(array)
 
+    //clearing input fields
   name.value=""
   age.value=""
   profession.value=""
@@ -92,5 +98,7 @@ addUser.addEventListener("click", () => {
           <li>Age:${newUser.age}</li>
           </ul>`
 
+    
+    //appending users
     document.getElementById("card-container").innerHTML += card
 })
