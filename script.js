@@ -52,25 +52,25 @@ filter.addEventListener("click", () => {
 
 
 //adding new user to array
-var add_user = document.getElementById("add-user")
+var addUser = document.getElementById("add-user")
 
-add_user.addEventListener("click", () => {
+addUser.addEventListener("click", () => {
     //getting user input
-  var name = document.getElementById("enter-name").value
-  var age = document.getElementById("enter-age").value
-  var profession = document.getElementById("enter-profession").value
+  var name = document.getElementById("enter-name")
+  var age = document.getElementById("enter-age")
+  var profession = document.getElementById("enter-profession")
 
 
-  if (name === "" || age === "" || profession === "") {
+  if (name.value === "" || age.value === "" || profession.value === "") {
     alert("Please fill out all the input fields before adding a user")
     return
   }
 
   const newUser = {
     id: array.length + 1,
-    name,
-    age,
-    profession,
+    name: name.value,
+    age: age.value,
+    profession: profession.value,
   }
 
   console.log(newUser)
@@ -79,6 +79,10 @@ add_user.addEventListener("click", () => {
   array.push(newUser)
 
   console.log(array)
+
+  name.value=""
+  age.value=""
+  profession.value=""
 
   //updating ui
     var card = `<ul>
