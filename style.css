@@ -26,6 +26,7 @@ ul{
 }
 
 #filter{
+    margin-top:7px;
     padding:10px 50px;
     background-color: white;
     color: black;
@@ -53,4 +54,9 @@ ul{
 
 #new-user > label > input[type="text"]{
     color:white;
+}
+
+#profession{
+    margin-top:10px;
+    margin-bottom: 10px;
 }
