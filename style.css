@@ -1,0 +1,51 @@
+body{
+    background-color: black;
+    color: white;
+    padding: 0px 30px;
+}
+
+select{
+    background-color: black;
+    color: white;
+    padding:10px 15px
+}
+
+ul{
+    width:35%;
+    border: 1px solid white;
+    display:flex;
+    justify-content: space-between;
+    list-style-type:none;
+    padding:10px;
+    border-radius: 8px;
+}
+
+#filter{
+    padding:10px 50px;
+    background-color: white;
+    color: black;
+}
+
+#new-user{
+    display:flex;
+    justify-content: space-between;
+}
+
+#new-user > label > input{
+    background-color: black;
+    border: 1px solid white;
+    padding:6px 5px;
+    margin-top:10px;
+    width:25vw;
+}
+
+.filter-two{
+   margin-top:20px;
+   padding:10px 50px;
+   background-color: white;
+   color: black;
+}
+
+#new-user > label > input[type="text"]{
+    color:white;
+}
