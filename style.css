@@ -4,6 +4,11 @@ body{
     padding: 0px 30px;
 }
 
+#heading-text{
+    margin-top:50px;
+    margin-bottom:20px;
+}
+
 select{
     background-color: black;
     color: white;
